@@ -1,14 +1,17 @@
 const express = require('express');
+
+const mongodb = require('./data/database');
 const app = express();
+
 const port = process.env.PORT || 3000;
 
-app.use(express.json());
+app.use('/', require('./routes'));
 
-const routes = require('./routes/contact'); // 👈 check what’s coming back
-console.log('Routes export:', routes);
-
-app.use('/', routes);
-
-app.listen(port, () => {
-  console.log(`Running on port ${port}`);
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  }
+  else {
+    app.listen(port, () => { console.log(`Datbase is Connected and Running on port ${port}`) });
+  }
 });

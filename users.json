@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "68c06a63d1e17786ec6447da"
+  },
+  "firstName": "Adebola",
+  "lastName": "Olawale",
+  "email": "adebola@gmail.com",
+  "age": 27
+},
+{
+  "_id": {
+    "$oid": "68c06be3d1e17786ec6447dd"
+  },
+  "firstname": "Chiamaka",
+  "lastName": "Okeke",
+  "email": "chiamaka@gmail.com",
+  "age": 31
+},
+{
+  "_id": {
+    "$oid": "68c06d9adfb1385db49bd13d"
+  },
+  "firstName": "Musa",
+  "lastName": "Ibrahim",
+  "email": "musa@gmail.com",
+  "age": 25
+}]
