@@ -1,0 +1,38 @@
+//LOCALHOST
+### Get all contacts
+GET http://localhost:3000/users
+
+
+### Get contact by Id
+GET http://localhost:3000/users/68c06a63d1e17786ec6447da
+
+
+### Create contact
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Olabola",
+    "lastName": "Adewale",
+    "email": "olabola@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "1998-04-15"
+}
+
+
+### Update contact
+PUT http://localhost:3000/users/68c06be3d1e17786ec6447dd HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Chichi",
+    "lastName": "Okeke",
+    "email": "chichi@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "1994-08-23"
+}
+
+
+### Delete contact
+DELETE http://localhost:3000/users/68c5662327f2d62dcb1b2320 HTTP/1.1
+Content-Type: application/json
